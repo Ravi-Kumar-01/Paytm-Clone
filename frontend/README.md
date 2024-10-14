@@ -1,50 +1,125 @@
-# React + TypeScript + Vite
+# Payments App Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend application for the Payments App. It provides a user interface for managing accounts, performing transactions, and viewing user information. The frontend is built using React(vite) and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
 
-## Expanding the ESLint configuration
+Make sure you have the following installed:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Node.js (v14 or later)
+- npm (v6 or later)
 
-- Configure the top-level `parserOptions` property like this:
+### Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/shubhhhGT/Payments_App/tree/main/frontend.git
+   cd frontend
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+### Configuration
+
+Create a `.env` file in the root directory and add the necessary environment variables:
+
+```plaintext
+VITE_BASE_URL=your_backend_api_url
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Running the App
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+To start the development server, use the following command:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm run dev
 ```
+
+The app will be running on \`http://localhost:5173/`.
+
+## Pages
+
+### Dashboard
+
+- **Path:** \`/dashboard\`
+- **Description:** Displays the user's balance, user information, and allows access to other features of the app.
+- **Components Used:**
+  - \`Appbar\`
+  - \`Balance\`
+  - \`Users\`
+
+### Home
+
+- **Path:** \`/\`
+- **Description:** The landing page of the application, providing options to sign up or sign in.
+- **Components Used:**
+  - \`Home\`
+
+### Send Money
+
+- **Path:** \`/sendmoney\`
+- **Description:** Allows the user to send money to another user.
+- **Components Used:**
+  - \`Heading\`
+  - \`Appbar\`
+
+### Settings
+
+- **Path:** \`/settings\`
+- **Description:** Allows the user to update their credentials.
+- **Components Used:**
+  - \`Heading\`
+  - \`SubHeading\`
+  - \`InputBox\`
+  - \`Button\`
+  - \`Appbar\`
+
+### Signin
+
+- **Path:** \`/signin\`
+- **Description:** Allows the user to sign in to their account.
+- **Components Used:**
+  - \`Heading\`
+  - \`SubHeading\`
+  - \`InputBox\`
+  - \`Button\`
+  - \`BottomWarning\`
+
+### Signup
+
+- **Path:** \`/signup\`
+- **Description:** Allows the user to create a new account.
+- **Components Used:**
+  - \`Heading\`
+  - \`SubHeading\`
+  - \`InputBox\`
+  - \`Button\`
+  - \`BottomWarning\`
+
+## Components
+
+The frontend application uses a variety of reusable components, including:
+
+- \`Appbar\`
+- \`Balance\`
+- \`Users\`
+- \`Heading\`
+- \`SubHeading\`
+- \`InputBox\`
+- \`Button\`
+- \`BottomWarning\`
+
+## Contributing
+
+Feel free to open issues or submit pull requests if you have any suggestions or improvements.
+
+## License
+
+This project is licensed under the MIT License.

@@ -16,7 +16,7 @@ Make sure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/shubhhhGT/Payments_App/tree/main/frontend.git
+   git clone https://github.com/Yash4152/Paytm-Clone.git
    cd frontend
    ```
 

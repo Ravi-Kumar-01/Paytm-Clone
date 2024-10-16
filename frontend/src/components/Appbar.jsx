@@ -6,7 +6,7 @@ const Appbar = ({ user }) => {
   const [open, setOpen] = useState(false);
   return (
     <div className="w-full relative flex justify-between items-center shadow px-4 sm:px-14">
-      <div className="text-xl sm:text-2xl font-bold ">Payments App</div>
+      <div className="text-xl sm:text-2xl font-bold ">Paytm Clone App</div>
       <div
         className="flex justify-between items-center relative"
         onClick={() => setOpen((prev) => !prev)}

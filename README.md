@@ -37,8 +37,8 @@ The frontend includes several pages like Dashboard, Home, Signin, Signup, Send M
 1. **Clone the repository**:
 
    ```sh
-   git clone 
-   cd payments-app
+   git clone https://github.com/Yash4152/Paytm-Clone.git
+   cd Paytm-Clone-app
    ```
 
 2. **Install backend dependencies**:

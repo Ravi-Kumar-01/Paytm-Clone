@@ -7,7 +7,7 @@ const Home = () => {
     <div className="h-screen flex flex-col">
       <header className="w-full flex justify-between items-center shadow px-4 sm:px-14 py-4 bg-white">
         <div className="text-xl sm:text-2xl font-bold text-blue-600">
-          Payments App
+          Paytm Clone
         </div>
         <div className="flex justify-between items-center gap-2">
           <button
@@ -26,7 +26,7 @@ const Home = () => {
       </header>
       <main className="flex-grow bg-slate-300 flex flex-col justify-center items-center text-center px-4">
         <h1 className="font-semibold text-2xl mb-2">
-          Welcome to Payment's App
+          Welcome to Paytm Clone App
         </h1>
         <p className="text-lg mb-4">
           A safe and secure way to transfer your hard-earned money.
@@ -38,7 +38,7 @@ const Home = () => {
       </main>
       <footer className="w-full bg-white py-4 flex justify-center items-center shadow-inner">
         <div className="text-sm text-gray-500">
-          © 2024 Payments App. All rights reserved.
+          © 2024 Paytm Clone App. All rights reserved.
         </div>
       </footer>
     </div>
